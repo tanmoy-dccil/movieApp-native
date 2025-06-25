@@ -6,6 +6,7 @@ import MovieCard from '@/components/MovieCard';
 import SearchBar from "@/components/SearchBar";
 import { updateSearchCount } from '@/services/appwrite';
 import { icons } from '@/constants/icons';
+import { images } from '@/constants/images';
 
 
 const Search = () => {
@@ -64,8 +65,8 @@ const [searchQuery, setSearchQuery] = useState('');
 
   return (
     <View className='flex-1 bg-primary'>
-      {/* <Image source={images.bg} className="flex-1 absolute w-full z-0"
-      resizeMode="cover"/> */}
+      <Image source={images.bg} className="flex-1 absolute w-full z-0"
+        resizeMode="cover" />
       <FlatList
       data={movies}
       renderItem={({item}) => <MovieCard {...item}/>}

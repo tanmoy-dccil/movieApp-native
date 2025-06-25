@@ -20,12 +20,9 @@ if(focused){
 }
 return(
     <View className='size-full justify-center items-center mt-4 round-full'>
-        <Image source={icon} tintColor="#A8B5DB" className='size-5'>
-        </Image>
+    <Image source={icon} tintColor="#A8B5DB" className='size-5' />
     </View>
-)
-
-   
+  )
 }
 
 const _layout = () => {
