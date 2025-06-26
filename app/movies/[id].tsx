@@ -27,8 +27,8 @@ const MovieDetails = () => {
   const { id } = useLocalSearchParams();
 
   const { data: movie, loading } = useFetch(() =>
-    fetchDetails(id as string));  
-  return (
+    fetchDetails(id as string));
+  return ( 
     <View className='bg-primary flex-1'>
       <ScrollView contentContainerStyle={{
         paddingBottom: 80
